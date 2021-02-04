@@ -1,0 +1,49 @@
+.meals-page__top-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.meals-page__controls {
+    display: flex;
+    align-items: center;
+}
+
+.meals-page__title {
+    font-weight: 500;
+    font-size: 36px;
+    color: #000000;
+}
+
+.meals-page__add-btn {
+    width: 250px;
+    height: 50px;
+    font-weight: 500;
+    font-size: 21px;
+    color: #FFFFFF;
+    background: #04932C;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    margin-right: 158px;
+}
+
+.meals-page__select-label {
+    font-weight: 500;
+    font-size: 21px;
+    color: #000000;
+    margin-right: 15px;
+}
+
+.meals-page__select {
+    background: #04932C;
+    border-radius: 15px;
+    height: 50px;
+    padding-left: 22px;
+    cursor: pointer;
+    outline: none;
+    font-weight: 500;
+    font-size: 21px;
+    color: #FFFFFF;
+}
