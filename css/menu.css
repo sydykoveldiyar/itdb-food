@@ -1,0 +1,16 @@
+.menu {
+
+}
+
+.menu-item {
+    width: 258px;
+    height: 160px;
+    background: rgba(91, 35, 35, 0.6);
+    border-radius: 10px;
+}
+
+.menu-item__title {
+    font-weight: 500;
+    font-size: 18px;
+    color: #FFFFFF;
+}
