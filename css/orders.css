@@ -1,0 +1,75 @@
+.orders {
+    display: flex;
+}
+
+.admin-sidebar {
+    width: 362px;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.admin-sidebar__container {
+    padding: 24px 0 0 36px;
+}
+
+.admin-sidebar__logo {
+    font-family: "Oregano", sans-serif;
+    font-size: 48px;
+    color: #B80505;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 69px;
+}
+
+.admin-sidebar__links {
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-sidebar__link {
+    font-size: 21px;
+    color: #000000;
+    transition: .6s;
+    display: inline-block;
+    margin-bottom: 31px;
+    max-width: 207px;
+}
+
+.admin-sidebar__link:hover {
+    font-size: 21px;
+    text-decoration-line: underline;
+    color: #B80505;
+}
+
+.orders-content {
+    width: 100%;
+}
+
+.orders-content__container {
+    padding: 26px 110px 59px 61px;
+}
+
+.orders__top-menu {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.orders__top-menu__btn {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 0 15px;
+}
+
+.orders__top-menu__btn svg {
+    width: 26px;
+    height: 27px;
+    fill: #766e6a;
+}
+
+.orders__title {
+    font-weight: 500;
+    font-size: 36px;
+    color: #000000;
+    margin-top: 30px;
+}
