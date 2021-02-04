@@ -13,21 +13,24 @@
 <body>
 <section class="orders">
     <div class="admin-sidebar">
-        <div class="admin-sidebar__container">
-            <p class="admin-sidebar__logo">CRM Cafe</p>
-            <div class="admin-sidebar__links">
-                <a href="#" class="admin-sidebar__link">Заказы</a>
-                <a href="#" class="admin-sidebar__link">Продажи</a>
-                <a href="#" class="admin-sidebar__link">Кухня</a>
-                <a href="#" class="admin-sidebar__link">Бар</a>
-                <a href="#" class="admin-sidebar__link">История транзакций</a>
-                <a href="#" class="admin-sidebar__link">Пользователи</a>
-                <a href="#" class="admin-sidebar__link">Категории</a>
-                <a href="#" class="admin-sidebar__link">Список блюд</a>
-                <a href="#" class="admin-sidebar__link">Столы</a>
-                <a href="#" class="admin-sidebar__link">Бронирование</a>
+        <div class="admin-sidebar__wrapper">
+            <div class="admin-sidebar__container">
+                <p class="admin-sidebar__logo">CRM Cafe</p>
+                <div class="admin-sidebar__links">
+                    <a href="#" class="admin-sidebar__link">Заказы</a>
+                    <a href="#" class="admin-sidebar__link">Продажи</a>
+                    <a href="#" class="admin-sidebar__link">Кухня</a>
+                    <a href="#" class="admin-sidebar__link">Бар</a>
+                    <a href="#" class="admin-sidebar__link">История транзакций</a>
+                    <a href="#" class="admin-sidebar__link">Пользователи</a>
+                    <a href="#" class="admin-sidebar__link">Категории</a>
+                    <a href="#" class="admin-sidebar__link">Список блюд</a>
+                    <a href="#" class="admin-sidebar__link">Столы</a>
+                    <a href="#" class="admin-sidebar__link">Бронирование</a>
+                </div>
             </div>
         </div>
+
     </div>
     <div class="orders-content">
         <div class="orders-content__container">
@@ -125,28 +128,97 @@
 </svg>
                 </button>
             </div>
-            <p class="orders__title">Orders Overview</p>
+            <p class="orders__title section__title">Orders Overview</p>
             <div class="grid__col-3 orders-overview">
                 <div class="orders-overview__item">
                     <p class="orders-overview__title">TOTAL ORDERS</p>
                     <p class="orders-overview__number">4</p>
                 </div>
                 <div class="orders-overview__item">
-                    <p class="orders-overview__title">TOTAL ORDERS</p>
+                    <p class="orders-overview__title">ORDERS MONTH</p>
                     <p class="orders-overview__number">4</p>
                 </div>
                 <div class="orders-overview__item">
-                    <p class="orders-overview__title">TOTAL ORDERS</p>
+                    <p class="orders-overview__title">ORDERS WEEK</p>
                     <p class="orders-overview__number">4</p>
                 </div>
                 <div class="orders-overview__item">
-                    <p class="orders-overview__title">TOTAL ORDERS</p>
+                    <p class="orders-overview__title">ORDERS TODAY</p>
                     <p class="orders-overview__number">4</p>
+                </div>
+            </div>
+            <div class="orders-rating">
+                <div class="orders-rating__col">
+                    <p class="orders-rating__title">Top Meals</p>
+                    <div class="orders-rating__item">
+                        <p class="orders-rating__item-title">Оливье</p>
+                        <p class="orders-rating__item-amount">1</p>
+                    </div>
+                    <div class="orders-rating__item">
+                        <p class="orders-rating__item-title">Сырники домашние</p>
+                        <p class="orders-rating__item-amount">1</p>
+                    </div>
+                    <div class="orders-rating__item">
+                        <p class="orders-rating__item-title">Панкейки</p>
+                        <p class="orders-rating__item-amount">3</p>
+                    </div>
+                    <div class="orders-rating__item">
+                        <p class="orders-rating__item-title">Круассаны с беконом</p>
+                        <p class="orders-rating__item-amount">2</p>
+                    </div>
+                    <div class="orders-rating__item">
+                        <p class="orders-rating__item-title">Ассорти салат</p>
+                        <p class="orders-rating__item-amount">1</p>
+                    </div>
+                    <div class="orders-rating__item">
+                        <p class="orders-rating__item-title">Фруктовый чай</p>
+                        <p class="orders-rating__item-amount">2</p>
+                    </div>
+                    <div class="orders-rating__item">
+                        <p class="orders-rating__item-title">Сэндвич с беконом</p>
+                        <p class="orders-rating__item-amount">2</p>
+                    </div>
+                    <div class="orders-rating__item">
+                        <p class="orders-rating__item-title">Блины с клубникой</p>
+                        <p class="orders-rating__item-amount">3</p>
+                    </div>
+                    <div class="orders-rating__item">
+                        <p class="orders-rating__item-title">Мясо по-французски</p>
+                        <p class="orders-rating__item-amount">1</p>
+                    </div>
+                    <div class="orders-rating__item">
+                        <p class="orders-rating__item-title">Цезарь</p>
+                        <p class="orders-rating__item-amount">3</p>
+                    </div>
+                    <button class="orders-rating__full-report">Full report</button>
+                </div>
+                <div class="orders-rating__col">
+                    <p class="orders-rating__title">Top Meals</p>
+                    <div class="orders-rating__item">
+                        <p class="orders-rating__item-title">#Официант 1</p>
+                        <p class="orders-rating__item-amount">3</p>
+                    </div>
+                    <div class="orders-rating__item">
+                        <p class="orders-rating__item-title">#Официант 2</p>
+                        <p class="orders-rating__item-amount">0</p>
+                    </div>
+                    <div class="orders-rating__item">
+                        <p class="orders-rating__item-title">#Официант 3</p>
+                        <p class="orders-rating__item-amount">1</p>
+                    </div>
+                    <div class="orders-rating__item">
+                        <p class="orders-rating__item-title">#Официант 5</p>
+                        <p class="orders-rating__item-amount">0</p>
+                    </div>
+                    <div class="orders-rating__item">
+                        <p class="orders-rating__item-title">#Официант 7</p>
+                        <p class="orders-rating__item-amount">1</p>
+                    </div>
+                    <button class="orders-rating__full-report">Full report</button>
                 </div>
             </div>
         </div>
         </div>
-    </div>
 </section>
 </body>
 </html>

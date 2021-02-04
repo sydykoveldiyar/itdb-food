@@ -4,12 +4,15 @@
 
 .admin-sidebar {
     width: 362px;
-    height: 100vh;
-    overflow-y: auto;
+    background-color: white;
+}
+
+.admin-sidebar__wrapper {
+    position: fixed;
 }
 
 .admin-sidebar__container {
-    padding: 24px 0 0 36px;
+    padding: 10px 0 0 36px;
 }
 
 .admin-sidebar__logo {
@@ -17,7 +20,7 @@
     font-size: 48px;
     color: #B80505;
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    margin-bottom: 69px;
+    margin-bottom: 30px;
 }
 
 .admin-sidebar__links {
@@ -30,7 +33,7 @@
     color: #000000;
     transition: .6s;
     display: inline-block;
-    margin-bottom: 31px;
+    margin-bottom: 25px;
     max-width: 207px;
 }
 
@@ -42,10 +45,11 @@
 
 .orders-content {
     width: 100%;
+    background: url("../images/bg.png") no-repeat center/cover;
 }
 
 .orders-content__container {
-    padding: 26px 110px 59px 61px;
+    padding: 20px 70px 59px 50px;
 }
 
 .orders__top-menu {
@@ -62,14 +66,129 @@
 }
 
 .orders__top-menu__btn svg {
-    width: 26px;
-    height: 27px;
+    width: 23px;
+    height: 24px;
     fill: #766e6a;
 }
 
 .orders__title {
+    margin: 10px 0 21px;
+}
+
+.section__title {
     font-weight: 500;
-    font-size: 36px;
+    font-size: 30px;
     color: #000000;
-    margin-top: 30px;
+}
+
+.grid__col-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+body {
+    font-family: "Avenir Next", sans-serif;
+}
+
+
+.orders-overview {
+    grid-column-gap: 30px;
+}
+
+.orders-overview__item {
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #B80505;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.orders-overview__title {
+    font-size: 17px;
+    color: #FFFFFF;
+    margin: 30px 0 5px;
+}
+
+.orders-overview__number {
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+.orders-rating {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.orders-rating__col {
+    background: #FFFFFF;
+    border-radius: 15px;
+    width: 375px;
+    padding-bottom: 20px;
+}
+
+.orders-rating__title {
+    font-weight: 500;
+    font-size: 24px;
+    color: #000000;
+    text-align: center;
+    padding-top: 12px;
+    margin-bottom: 10px;
+}
+
+.orders-rating__item {
+    font-size: 18px;
+    color: #000000;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    margin-top: 15px;
+    padding-bottom: 2px;
+}
+
+.orders-rating__item-title {
+    margin-left: 26px;
+}
+
+.orders-rating__item-amount {
+    margin-right: 8px;
+}
+
+.orders-rating__full-report {
+    width: 150px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: inherit;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin: 20px auto 0;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: white;
+}
+
+.footer__container {
+    height: 70px;
+    margin: 0 70px 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__menu a {
+    font-size: 18px;
+    color: #000000;
+    margin-right: 33px;
+}
+
+.footer__copyright {
+    font-size: 18px;
+    color: #000000;
 }
