@@ -33,6 +33,11 @@
     margin-right: 158px;
 }
 
+.meals-page__select-wrapper {
+    display: flex;
+    align-items: center;
+}
+
 .meals-page__select-label {
     font-weight: 500;
     font-size: 21px;
@@ -50,13 +55,43 @@
     font-weight: 500;
     font-size: 21px;
     color: #FFFFFF;
+    border: none;
+    appearance: none;
+    position: relative;
+}
+
+.select {
+    position: relative;
+    line-height: 3;
+}
+
+.select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    cursor: pointer;
+    pointer-events: none;
+    transition: .25s all ease;
+}
+
+.select:hover::after {
+    color: #fff;
+}
+
+.meals-page__select-icon svg {
+    width: 20px;
+    height: 20px;
+    fill: white;
 }
 
 .meals-page__table {
-    margin-top: 35px;
+    margin: 35px 0 150px;
     border-collapse: collapse;
     background: #FFFFFF;
     border-radius: 30px;
+    box-shadow: 0 0 5px 0 black;
 }
 
 .meals-page__table th {
@@ -104,7 +139,7 @@
     width: 73px;
     height: 30px;
     position: relative;
-    margin-top: 5px;
+    margin-top: 8px;
 }
 
 .meals-page__checkbox-toggle:checked + .meals-page__checkbox-label {
@@ -151,3 +186,31 @@
         transform: translateX(-2px) scale(1);
     }
 }
+
+.meals-page__table-btn-wrapper {
+    display: flex;
+    height: 100%;
+}
+
+.meals-page__table-btn {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: inherit;
+    outline: none;
+    cursor: pointer;
+}
+
+.meals-page__table-btn:first-of-type {
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.meals-page__table-btn svg {
+    width: 30px;
+    height: 30px;
+    fill: #808080;
+}
+
