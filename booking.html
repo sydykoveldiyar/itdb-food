@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/fonts.css">
+	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="css/booking.css">
+</head>
+<body>
+<section class="booking">
+	<h1 class="booking__title title">Бронирование</h1>
+	<div class="booking__form">
+		<div class="booking__top-bar">
+			<div class="booking__column">
+				<h2 class="booking__top-title title">Дата брони</h2>
+				<div class="booking__date-part">
+					<input class="booking__date-inp" type="text" id="datepicker2" value="05-Feb-2021"/>
+					<label class="booking__calendar" for="datepicker2"></label>
+				</div>
+			</div>
+			<div class="booking__column">
+				<h2 class="booking__top-title title">Кол-во человек</h2>
+				<div class="booking__counter grid__col-4">
+					<button class="booking__col-btn bordered">-</button>
+					<div class="booking__col bordered">2</div>
+					<button class="booking__col-btn bordered">+</button>
+				</div>
+			</div>
+		</div>
+		<div class="booking__timeline">
+			<div class="booking__column">
+				<label class="booking__timeline-item" for="choice1">15:00</label>
+				<input class="booking__pick" name="pick" id="choice1" type="radio">
+			</div>
+			<div class="booking__column">
+				<label class="booking__timeline-item" for="choice2">15:00</label>
+				<input class="booking__pick" name="pick" id="choice2" type="radio">
+			</div>
+			<div class="booking__column">
+				<label class="booking__timeline-item" for="choice3">15:00</label>
+				<input class="booking__pick" name="pick" id="choice3" type="radio">
+			</div>
+			<div class="booking__column">
+				<label class="booking__timeline-item" for="choice4">15:00</label>
+				<input class="booking__pick" name="pick" id="choice4" type="radio">
+			</div>
+			<div class="booking__column">
+				<label class="booking__timeline-item" for="choice5">15:00</label>
+				<input class="booking__pick" name="pick" id="choice5" type="radio">
+			</div>
+			<div class="booking__column">
+				<label class="booking__timeline-item" for="choice6">15:00</label>
+				<input class="booking__pick" name="pick" id="choice6" type="radio">
+			</div>
+			<div class="booking__column">
+				<label class="booking__timeline-item" for="choice7">15:00</label>
+				<input class="booking__pick" name="pick" id="choice7" type="radio">
+			</div>
+			<div class="booking__column">
+				<label class="booking__timeline-item" for="choice8">15:00</label>
+				<input class="booking__pick" name="pick" id="choice8" type="radio">
+			</div>
+			<div class="booking__column">
+				<label class="booking__timeline-item" for="choice9">15:00</label>
+				<input class="booking__pick" name="pick" id="choice9" type="radio">
+			</div>
+			<div class="booking__column">
+				<label class="booking__timeline-item" for="choice10">15:00</label>
+				<input class="booking__pick" name="pick" id="choice10" type="radio">
+			</div>
+		</div>
+		<div class="booking__free-tables">
+			<h2 class="booking__middle-title title">Свободные столы</h2>
+			<div class="booking__middle-grid">
+				<div class="booking__column">
+					<label class="booking__middle-item" for="pick1">1</label>
+					<input class="booking__pick" name="pick" id="pick1" type="radio">
+				</div>
+				<div class="booking__column">
+					<label class="booking__middle-item" for="pick2">2</label>
+					<input class="booking__pick" name="pick" id="pick2" type="radio">
+				</div>
+				<div class="booking__column">
+					<label class="booking__middle-item" for="pick3">3</label>
+					<input class="booking__pick" name="pick" id="pick3" type="radio">
+				</div>
+				<div class="booking__column">
+					<label class="booking__middle-item" for="pick4">4</label>
+					<input class="booking__pick" name="pick" id="pick4" type="radio">
+				</div>
+				<div class="booking__column">
+					<label class="booking__middle-item" for="pick5">5</label>
+					<input class="booking__pick" name="pick" id="pick5" type="radio">
+				</div>
+				<div class="booking__column">
+					<label class="booking__middle-item" for="pick6">6</label>
+					<input class="booking__pick" name="pick" id="pick6" type="radio">
+				</div>
+				<div class="booking__column">
+					<label class="booking__middle-item" for="pick7">7</label>
+					<input class="booking__pick" name="pick" id="pick7" type="radio">
+				</div>
+				<div class="booking__column">
+					<label class="booking__middle-item" for="pick8">8</label>
+					<input class="booking__pick" name="pick" id="pick8" type="radio">
+				</div>
+				<div class="booking__column">
+					<label class="booking__middle-item" for="pick9">9</label>
+					<input class="booking__pick" name="pick" id="pick9" type="radio">
+				</div>
+			</div>
+		</div>
+		<div class="booking__bot-side">
+			<div class="booking__inputs">
+				<label class="booking__text-inp1" for="booking__text-inp1"></label>
+				<input class="booking__text-inp" placeholder="Имя клиента" id="booking__text-inp1" type="text">
+				<label class="booking__text-inp2" for="booking__text-inp2"></label>
+				<input class="booking__text-inp" placeholder="+996" id="booking__text-inp2" type="text">
+			</div>
+		</div>
+		<div style="text-align: right">
+			<button class="booking__bot-btn book-unbook-btn">Забронировать</button>
+		</div>
+	</div>
+</section>
+<script src="./js/booking.js"></script>
+<script type="text/javascript">
+    var foopicker = new FooPicker({
+        id: 'datepicker',
+        dateFormat: 'dd/MM/yyyy',
+        disable: ['29/07/2017', '30/07/2017', '31/07/2017', '01/08/2017']
+    });
+    var foopicker2 = new FooPicker({
+        id: 'datepicker2'
+    });
+</script>
+</body>
+</html>

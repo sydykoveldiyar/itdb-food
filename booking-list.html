@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/fonts.css">
+	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="css/booking.css">
+</head>
+<body>
+<section class="booking">
+	<div class="booking__form">
+		<div class="booking__date-part">
+			<input class="booking__date-inp" type="text" id="datepicker2" value="05-Feb-2021"/>
+			<label class="booking__calendar" for="datepicker2"></label>
+		</div>
+		<div class="booking__list grid__col-4">
+			<div class="booking-list__column flex-wrapper">
+				<div class="booking__list-btn">1</div>
+				<div class="booking__inputs">
+					<label class="booking__text-inp1" for="booking__text-inp1"></label>
+					<input class="booking__text-inp" placeholder="Имя клиента" id="booking__text-inp1" type="text">
+					<label class="booking__text-inp2" for="booking__text-inp2"></label>
+					<input class="booking__text-inp" placeholder="+996" id="booking__text-inp2" type="text">
+				</div>
+			</div>
+			<div class="booking-list__column flex-wrapper">
+				<div class="booking-list__middle-part grid__col-6">
+					<div class="booking-list__small-col">
+						<p class="booking-list__title">Кол-во человек</p>
+						<label class="booking__timeline-item" for="choice1">15:00</label>
+						<input class="booking__pick" name="pick" id="choice1" type="radio">
+					</div>
+					<div class="booking-list__small-col">
+						<p class="booking-list__title">Время</p>
+						<label class="booking__timeline-item" for="choice2">15:00</label>
+						<input class="booking__pick" name="pick" id="choice2" type="radio">
+					</div>
+				</div>
+			</div>
+			<div class="booking-list__column bottom-right">
+				<button class="warn__btn book-unbook-btn">Снять бронь</button>
+			</div>
+		</div>
+
+	</div>
+</section>
+<script src="./js/booking.js"></script>
+<script type="text/javascript">
+    var foopicker = new FooPicker({
+        id: 'datepicker',
+        dateFormat: 'dd/MM/yyyy',
+        disable: ['29/07/2017', '30/07/2017', '31/07/2017', '01/08/2017']
+    });
+    var foopicker2 = new FooPicker({
+        id: 'datepicker2'
+    });
+</script>
+</body>
+</html>

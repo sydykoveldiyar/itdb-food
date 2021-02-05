@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Avenir Next", sans-serif;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+.grid__col-4{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.grid__col-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.header{
+    height: 48px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+.header__back-arrow{
+    padding-left: 13px;
+}
+
+.header__title{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    padding-left: 19px;
+}
+
