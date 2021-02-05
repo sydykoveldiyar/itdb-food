@@ -17,7 +17,7 @@ body {
     grid-column-gap: 20px;
 }
 
-.warn-btn {
+.danger-btn {
     background-color: #B80505;
 }
 
