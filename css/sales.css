@@ -1,0 +1,87 @@
+.sales{
+    display: flex;
+}
+
+.sales-content {
+    width: 100%;
+    background: url("../images/bg.png") no-repeat center/cover;
+}
+
+.sales__title {
+    margin: 10px 0 21px;
+}
+
+.sales-overview{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 23px;
+    padding-bottom: 62px;
+}
+
+
+body {
+    font-family: "Avenir Next", sans-serif;
+}
+
+.sales-overview__item {
+    position: relative;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+    border-radius: 15px;
+    padding-left: 25px;
+}
+
+.picture_revenue{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.sales-rating__tops{
+}
+
+.sales-rating__top-list{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-column-gap: 40px;
+    align-items: center;
+    padding-bottom: 83px;
+}
+
+.sales-rating__top-title{
+    text-align: center;
+    padding-bottom: 24px;
+    padding-top: 12px;
+}
+
+.sales-rating__tops{
+    background-color: #fff;
+    border-radius: 15px;
+    height: 500px;
+}
+
+.sales-rating__top-item{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sales-rating__top-item-name{
+    padding-left: 26px;
+}
+
+.sales-rating__top-item-price{
+    padding-right: 8px;
+}
+
+.sales-rating__item-chart{
+    width: 100%;
+    background-color: #fff;
+    height: 774px;
+    border-radius: 30px;
+}
